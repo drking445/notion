@@ -1,0 +1,12 @@
+{
+  "name": "notion-example",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@notionhq/client": "^1.0.1",
+    "jquery-csv": "^1.0.21",
+    "papaparse": "^5.3.2"
+  }
+}
