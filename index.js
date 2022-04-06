@@ -30,7 +30,7 @@ async function addItem(book, name, rating) {
           "EWFF": { 
             rich_text:[
               {
-                "text": {
+                "text": { 
                   "content": name
                 }
               }
@@ -81,7 +81,7 @@ for(let i = 0; i < books.length-3; i+=3){
     // total hashmap tracks the total of all the ratings of a given book
     let num = parseInt(books[i+2]);
     if(!count.has(bookName)){
-        bookCount.set(bookName, 1);
+        count.set(bookName, 1);
         total.set(bookName, num);
     }
     else{
