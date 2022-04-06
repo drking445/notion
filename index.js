@@ -57,6 +57,7 @@ for(let i = 0; i < books.length-3; i+=3){
     let name = books[i].split(" ");
     let bookName = "";
     for(let j = 0; j < name.length; j++){
+        // Remove extra whitespaces
         if(name[j] !== " "){
             bookName = bookName + name[j].charAt(0).toUpperCase() + name[j].slice(1) + " ";
         }
@@ -74,7 +75,7 @@ for(let i = 0; i < books.length-3; i+=3){
     // total hashmap tracks the total of all the ratings of a given book
     let num = parseInt(books[i+2]);
     if(!count.has(bookName)){
-        count.set(bookName, 1);
+        bookCount.set(bookName, 1);
         total.set(bookName, num);
     }
     else{
@@ -87,4 +88,13 @@ for(let i = 0; i < books.length-3; i+=3){
     }
 }
 
+// This is supposed to take the unique book titles, the average of the ratings for the book and the number of favorites for each book but it is not working
+/*
+for (const [key, value] of Object.entries(ratings)) {
+    console.log("hit");
+    let average = total.get(key)/count.get(key);
+    addItem(key, average, value);
+  }
+  console.log(ratings.size);
+  */
  
