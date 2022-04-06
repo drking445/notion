@@ -26,7 +26,7 @@ If you're using the Notion desktop app, click on the Share button and select Cop
 
 The database ID is the part of the URL after your workspace name (if you have one) and the slash (myworkspace/) and before the question mark (?). The ID is 32 characters long, containing numbers and letters. Copy the ID and paste it somewhere you can easily find later.
 
-Now open terminal/command prompt and go to the notion folderL
+Now open terminal/command prompt and go to the notion folder:
 
 First run:
 
